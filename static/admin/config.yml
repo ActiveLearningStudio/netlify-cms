@@ -19,7 +19,7 @@ collections:
     folder: 'markdown/home/hero'
     create: true
     fields:
-        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'blog-post' }
+        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'hero' }
         - { label: 'Title', name: 'title', widget: 'string' }
         - { label: 'Description', name: 'description', widget: 'text' }
         - { label: 'Gender', name: 'featuredpost', widget: 'boolean' }
@@ -30,7 +30,7 @@ collections:
     folder: 'markdown/home/testonomials'
     create: true
     fields:
-        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'blog-post' }
+        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'testnomial' }
         - { label: 'Title', name: 'title', widget: 'string'  }
         - { label: 'Color', name: 'color', widget: 'color' ,enableAlpha: true, allowInput: true  }
         - {label: 'Birthdate',name: 'birthdate',widget: 'date',default: '', format: 'MMM Do YY' }
@@ -43,7 +43,7 @@ collections:
     folder: 'markdown/home/contact-us'
     create: true
     fields:
-        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'blog-post' }
+        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'contact' }
         - { label: 'Title', name: 'title', widget: 'string'  }
         - {label: 'Enter  your age',name: 'your age',widget: 'number',default: '18'}
         - {label: 'Curriki Member', name: 'member', widget: 'boolean', default: true}
