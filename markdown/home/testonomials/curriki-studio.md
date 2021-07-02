@@ -2,7 +2,7 @@
 templateKey: testnomial
 title: curriki studio
 color: "#af9494"
-birthdate: Mar 3rd 00
+birthdate: Mar 14th 00
 tags: /img/chemex.jpg
 favouriteProjects:
   - news
