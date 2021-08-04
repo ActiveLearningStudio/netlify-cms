@@ -3,18 +3,23 @@ import { Link } from 'gatsby'
 import fotLogo from '../../assets/images/studio_black_transparent.png'
 import './style.scss'
 
-const Footer = () => {
+const Footer = ({data}) => {
     return (
         <>
             <div className="main-footer">
                 <div className="footer-pages">
-                    <Link className="pages" to="/">Terms of Service</Link>
-                    <Link className="pages" to="/">Privacy Policy</Link>
-                    <Link className="pages" to="/">Help & Support</Link>
+                    {data.frontmatter.pages.page.map(a =>{
+                        return(
+                            <Link className="pages" to="/">{a.pagename}</Link>
+                        )
+                    })}
+                    
+                    {/* <Link className="pages" to="/">Privacy Policy</Link>
+                    <Link className="pages" to="/">Help & Support</Link> */}
                 </div>
                 <div className="footer-logo">
-                    <p className="fot-text">Powered by</p>
-                    <img className="logo" src={fotLogo} alt="ajf" />
+                    <p className="fot-text">{data.frontmatter.powered_by}</p>
+                    <img style={{maxWidth:'40px'}} className="logo" src={data.frontmatter.footer_logo} alt="ajf" />
                 </div>
             </div>
         </>

@@ -5,11 +5,11 @@ import { Link } from 'gatsby';
 import navLogo from '../../assets/images/studio_new_logo_small.png'
 import './style.scss'
 
-const TopNavbar = () => {
+const TopNavbar = ({data}) => {
     return (
         <>
             <Navbar expand="lg" className="navbar">
-                <Navbar.Brand href="#"> <img className="top-logo" src={navLogo} alt="fn" /> </Navbar.Brand>
+                <Navbar.Brand href="#"> <img className="top-logo" src={data.frontmatter.top_logo} alt="fn" /> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -17,8 +17,13 @@ const TopNavbar = () => {
                     navbarScroll
                     style={{marginLeft: 'auto'}}
                     >
-                    <Link className="nav-link" to="/">Home</Link>
-                    <Link className="nav-link" to="/coming">Link</Link>
+                        {data.frontmatter.add_links.links.map(x => {
+                            return(
+                                <Link className="nav-link" to="/">{x.link_name}</Link>
+                            )
+                        })}
+                   
+                    {/* <Link className="nav-link" to="/coming">Link</Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

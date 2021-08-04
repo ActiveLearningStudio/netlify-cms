@@ -1,4 +1,5 @@
 ---
+templateKey: top-navbar
 title: Top navigation
 top logo: /img/meeting-space.png
 add links:

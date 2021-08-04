@@ -1,4 +1,5 @@
 ---
+templateKey: footer-area
 title: footer
 pages:
   page:
