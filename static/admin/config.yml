@@ -14,41 +14,41 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'hero'
-    label: 'hero'
-    folder: 'markdown/home/hero'
-    create: true
-    fields:
-        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'hero' }
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Description', name: 'description', widget: 'text' }
-        - { label: 'Gender', name: 'featuredpost', widget: 'boolean' }
-        - { label: 'Featured Image', name: 'featuredimage', widget: image }
+  - name: 'layout'
+    label: 'Layout'
+    files:
+      - file: 'markdown/layout/topnave.md'
+        label: "Navigation Bar"
+        name: "topnav"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "top-navbar"}
+          - {label: Title, name: title, widget: string}
+          - { label: 'Top Logo', name: 'top logo', widget: image }
+          - {label: Add Links, name: add links, widget: object, fields: [{label: Links, name: links, widget: list, fields: [{label: Link Name, name: link name, widget: string}, {label: URl, name: url, widget: string}]}]}
+      - file: 'markdown/layout/footer.md'
+        label: "Footer"
+        name: "footer"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "top-navbar"}
+          - {label: Title, name: title, widget: string}
+          - {label: Pages, name: pages, widget: object, fields: [{label: page, name: page, widget: list, fields: [{label: PageName, name: pagename, widget: string}]}]}
+          - { label: 'Footer Logo', name: 'footer logo', widget: image }
+          - {label: Powered By, name: powered by, widget: string}
 
-  - name: 'testonomials'
-    label: 'testonomials'
-    folder: 'markdown/home/testonomials'
-    create: true
-    fields:
-        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'testnomial' }
-        - { label: 'Title', name: 'title', widget: 'string'  }
-        - { label: 'Color', name: 'color', widget: 'color' ,enableAlpha: true, allowInput: true  }
-        - {label: 'Birthdate',name: 'birthdate',widget: 'date',default: '', format: 'MMM Do YY' }
-        - { label: 'Upload file', name: 'tags', widget: 'file' }
-        - { label: 'Your Favourite Projects', name: 'favouriteProjects', widget: 'list', default: ["news"]}
-        - { label: 'Your Location', name: 'location', widget: 'map'}
+  - name: "comingsoon page"
+    label: "ComingSoon page"
+    files:
+      - file: "markdown/comingsoonpage/comingsoon.md"
+        label: "ComingSoon"
+        name: "comingsoon"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coming-soon"}
+          - {label:  heading , name: heading top, widget: string}
+          - {label: Title , name: title, widget: text}                 
+          - {label:  Description, name: description, widget: markdown}   
 
-  - name: 'contact-us'
-    label: 'contact-us'
-    folder: 'markdown/home/contact-us'
-    create: true
-    fields:
-        - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'contact' }
-        - { label: 'Title', name: 'title', widget: 'string'  }
-        - {label: 'Enter  your age',name: 'your age',widget: 'number',default: '18'}
-        - {label: 'Curriki Member', name: 'member', widget: 'boolean', default: true}
-        - { label: 'Select your country', name: 'country', widget: 'select' , options: ['Pakistan', 'USA', 'UK']}
-        - { label: 'Blog post content', name: 'description', widget: 'markdown' }
+    
+       
 
           
 
