@@ -2,6 +2,6 @@
 templateKey: coming-soon
 heading top: Artificial Intelligence (AI)
 title: Coming Soon
-coming image: /img/products-grid1.jpg
+coming image: /img/studio_new_logo.png
 description: COMING SOON
 ---
