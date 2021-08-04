@@ -19,6 +19,7 @@ const Index = ({children}) => {
                 pages {
                     page {
                     pagename
+                    url
                     }
                 }
                 footer_logo

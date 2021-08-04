@@ -10,7 +10,7 @@ const Footer = ({data}) => {
                 <div className="footer-pages">
                     {data.frontmatter.pages.page.map(a =>{
                         return(
-                            <Link className="pages" to="/">{a.pagename}</Link>
+                            <Link className="pages" to={a.url}>{a.pagename}</Link>
                         )
                     })}
                     

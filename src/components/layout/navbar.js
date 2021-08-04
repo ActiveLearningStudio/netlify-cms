@@ -19,7 +19,7 @@ const TopNavbar = ({data}) => {
                     >
                         {data.frontmatter.add_links.links.map(x => {
                             return(
-                                <Link className="nav-link" to="/">{x.link_name}</Link>
+                                <a className="nav-link" target="_blank" href={x.url}>{x.link_name}</a>
                             )
                         })}
                    
