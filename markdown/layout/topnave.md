@@ -1,7 +1,7 @@
 ---
 templateKey: top-navbar
 title: Top navigation
-top logo: /img/meeting-space.png
+top logo: /img/studio_new_logo.png
 add links:
   links:
     - link name: Home

@@ -6,6 +6,6 @@ pages:
     - pagename: Terms of Service
     - pagename: Privacy Policy
     - pagename: Help & Support
-footer logo: /img/tutorials.png
+footer logo: /img/studio_black_transparent.png
 powered by: Powered by
 ---
