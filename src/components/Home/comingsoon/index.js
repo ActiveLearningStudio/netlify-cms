@@ -24,9 +24,9 @@ const Index = () => {
 
     return (
         <> 
-          <div>
+          <div className="comingsoon">
             <img style={{maxWidth: '100%'}} src={detall.frontmatter.coming_image} alt="cs" />
-            <p>{detall.frontmatter.description}</p>
+            <div  dangerouslySetInnerHTML={{__html: detall.frontmatter.description}}/>
           </div>
           
         </>
