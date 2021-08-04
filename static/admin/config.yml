@@ -43,8 +43,8 @@ collections:
         name: "comingsoon"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coming-soon"}
-          - {label:  heading , name: heading top, widget: string}
-          - {label: Title , name: title, widget: text}                 
+          - {label:  Title, name: title, widget: string}
+          - { label: 'Coming Image', name: 'coming image', widget: image }            
           - {label:  Description, name: description, widget: markdown}   
 
     
