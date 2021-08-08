@@ -1,7 +1,7 @@
 ---
 templateKey: top-navbar
 title: Top navigation
-top logo: /img/studio_new_logo.png
+top logo: /img/openeducation_logo_svg.svg
 add links:
   links:
     - link name: Home
