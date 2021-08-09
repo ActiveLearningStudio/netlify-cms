@@ -7,12 +7,11 @@ description: >-
   <!--StartFragment-->
 
 
-  **Project #OPENEDUCATION ([https://github.com/​activelearningstudio](https://github.com/activelearningstudio))** Project #OPENEDUCATION is an ambitious joint effort between Red Hat and the non-profit education technology company, Curriki. \
+  Project #OPENEDUCATION ([https://github.com/​activelearningstudio](https://github.com/activelearningstudio))** Project #OPENEDUCATION is an ambitious joint effort between Red Hat and the non-profit education technology company, Curriki. \
 
   \
 
   The project’s vision is: ***To reimagine education at every level and point in life, and do it through sharing, open technologies, and open content.***
-
 
   > \
 
@@ -21,7 +20,6 @@ description: >-
   >
 
   > ~ [https://www.unicef.org/​reimagine/education](https://www.unicef.org/reimagine/education)
-
 
   \
 
