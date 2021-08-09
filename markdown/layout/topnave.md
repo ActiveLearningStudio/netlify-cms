@@ -6,4 +6,6 @@ add links:
   links:
     - link name: Studio
       url: https://cc.curriki.org/studio
+    - url: https://library.curriki.org/
+      link name: search
 ---
