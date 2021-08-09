@@ -9,7 +9,16 @@ const TopNavbar = ({data}) => {
     return (
         <>
             <Navbar expand="lg" className="navbar">
-                <Navbar.Brand href="#"> <img className="top-logo" src={data.frontmatter.top_logo} alt="fn" /> </Navbar.Brand>
+                <Navbar.Brand 
+                  style ={{
+                      backgroundImage: `url(${data.frontmatter.top_logo})`,
+                      backgroundPosition: 'center',
+                      backgroundSize: 'contain',
+                      backgroundRepeat: 'no-repeat',
+                      height: '30px',
+                  }}
+                href="#"> </Navbar.Brand>
+                {/* <img className="top-logo" src={data.frontmatter.top_logo} alt="fn" /> */}
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav

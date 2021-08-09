@@ -31,7 +31,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "footer-area"}
           - {label: Title, name: title, widget: string}
-          - {label: Pages, name: pages, widget: object, fields: [{label: page, name: page, widget: list, fields: [{label: PageName, name: pagename, widget: string}]}]}
+          - {label: Pages, name: pages, widget: object, fields: [{label: page, name: page, widget: list, fields: [{label: PageName, name: pagename, widget: string}, {label: Page URl, name: pageurl, widget: string}]}]}
           - { label: 'Footer Logo', name: 'footer logo', widget: image }
           - {label: Powered By, name: powered by, widget: string}
 
