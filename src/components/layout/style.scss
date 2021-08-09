@@ -82,13 +82,14 @@ p{
 }
 
 .comingsoon {
-  
-      font-size: 24px;
-      padding: 20px;
+  text-align: center;
+    font-size: 24px;
+    padding: 20px;
 
-      img {
-          width: 200px;
-      }
-  
-
+    img {
+        width: 200px;
+    }
+    .description{
+        text-align: left;
+    }
 }

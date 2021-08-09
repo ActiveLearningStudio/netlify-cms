@@ -27,7 +27,7 @@ const Index = () => {
         <> 
           <div className="comingsoon">
             <img style={{maxWidth: '100%'}} src={detall.frontmatter.coming_image} alt="cs" />
-            <div>
+            <div className="description">
               <ReactMarkdown>
                   {detall.frontmatter.description}
               </ReactMarkdown>
