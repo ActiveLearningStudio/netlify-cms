@@ -4,7 +4,7 @@ heading top: Artificial Intelligence (AI)
 title: Coming Soon
 coming image: /img/studio_new_logo.png
 description: >-
-  <!--StartFragment-->\
+  <!--StartFragment-->
 
 
   **Project #OPENEDUCATION ([https://github.com/​activelearningstudio](https://github.com/activelearningstudio))** Project #OPENEDUCATION is an ambitious joint effort between Red Hat and the non-profit education technology company, Curriki. \
