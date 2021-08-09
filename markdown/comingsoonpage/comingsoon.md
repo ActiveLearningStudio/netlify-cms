@@ -4,10 +4,11 @@ heading top: Artificial Intelligence (AI)
 title: Coming Soon
 coming image: /img/studio_new_logo.png
 description: >-
-  **Project #OPENEDUCATION is an ambitious joint effort between Red Hat and the
-  non-profit education technology company, Curriki. \*\***\
+  Project #OPENEDUCATION is an ambitious joint effort between Red Hat and the
+  non-profit education technology company, Curriki.
 
-  The project’s vision is: To reimagine education at every level and point in life, and do it through sharing, open technologies, and open content.
+
+  The project’s vision is: ***To reimagine education at every level and point in life, and do it through sharing, open technologies, and open content.***
 
 
   > \
