@@ -10,7 +10,7 @@ const Footer = ({data}) => {
                 <div className="footer-pages">
                     {data.frontmatter.pages.page.map(a =>{
                         return(
-                            <a className="pages" target="_blank"  href={a.url}>{a.pagename}</a>
+                            <a className="pages" target="_blank"  href={a.pageurl}>{a.pagename}</a>
                         )
                     })}
                     
