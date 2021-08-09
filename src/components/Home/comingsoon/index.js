@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import { useStaticQuery, graphql} from 'gatsby';
 
 const Index = () => {
@@ -26,7 +27,11 @@ const Index = () => {
         <> 
           <div className="comingsoon">
             <img style={{maxWidth: '100%'}} src={detall.frontmatter.coming_image} alt="cs" />
-            <div  dangerouslySetInnerHTML={{__html: detall.frontmatter.description}}/>
+            <div>
+              <ReactMarkdown>
+                  {detall.frontmatter.description}
+              </ReactMarkdown>
+            </div>
           </div>
           
         </>
