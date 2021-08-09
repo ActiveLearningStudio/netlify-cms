@@ -8,6 +8,8 @@ description: >-
   non-profit education technology company, Curriki.
 
 
+
+
   The project’s vision is: ***To reimagine education at every level and point in life, and do it through sharing, open technologies, and open content.***
 
 
@@ -19,7 +21,9 @@ description: >-
 
   > ~ [https://www.unicef.org/​reimagine/education](https://www.unicef.org/reimagine/education)
 
-  > \
+  >
+
+  >
 
   > Project #OPENEDUCATION will leave a large and indelible mark in solving these problems by making the tools used to create, deliver, and distribute high-quality, effective, and measurable learning experiences free, open and easy to access. Make a different. Join the #OPENEDUCATION movement!
 ---
