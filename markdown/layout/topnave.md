@@ -8,4 +8,6 @@ add links:
       url: https://cc.curriki.org/studio
     - url: https://library.curriki.org/
       link name: Search
+    - link name: AdminTest
+      url: https://google.com
 ---
