@@ -3,6 +3,7 @@ import Navbar from './navbar'
 import Footer from './footer'
 import { useStaticQuery, graphql} from 'gatsby';
 
+import '../../assets/css/index.scss';
 const Index = ({children}) => {
     const data = useStaticQuery(graphql`
         query layoutQuery {
