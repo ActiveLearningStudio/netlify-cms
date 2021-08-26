@@ -10,14 +10,16 @@ import './style.scss';
 
 const Index = () => {
   return (
-    <>
-      <Hero />
-      <For />
-      <Create />
+    <div className="home-page">
+      <div className="bg-section">
+        <Hero />
+        <For />
+        <Create />
+      </div>
       <Stats />
       <Technology />
       <Start />
-    </>
+    </div>
   );
 };
 
