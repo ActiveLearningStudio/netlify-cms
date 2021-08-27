@@ -23,17 +23,17 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "hero-section"}
           - {label: Title, name: title, widget: string}
-          - { label: 'Heading One', name: 'heading one', widget: string }
-          - { label: 'Heading Two', name: 'heading two', widget: text }
-          - { label: 'Heading Three', name: 'heading Three', widget: text }
-          - { label: 'Hero Image', name: 'hero image', widget: image }
+          - { label: 'Heading One', required: false,   name: 'heading one', widget: string }
+          - { label: 'Heading Two', required: false,   name: 'heading two', widget: text }
+          - { label: 'Heading Three', required: false,  name: 'heading Three', widget: text }
+          - { label: 'Hero Image', required: false,  name: 'hero image', widget: image }
       - file: 'markdown/homePage/forCardSection.md'
         label: "forCardSection"
         name: "forCardSection"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "for-cardsection"}
           - {label: Title, name: title, widget: string}
-          - {label: Cards, name: cards, widget: object, fields: [{label: Card, name: card, widget: list, fields: [{ label: 'Card Logo', name: 'card logo', widget: image },{label: Card Heading One, name: card heading one, widget: string},{label: Card Heading Two, name: card heading two, widget: text},{label: Link Name, name: link name, widget: string},{label: Link Url, name: link url, widget: string}]}]}
+          - {label: Cards, required: false, name: cards, widget:  object, fields: [{label: Card, name: card, widget: list, fields: [{ label: 'Card Logo', name: 'card logo', widget: image },{label: Card Heading One, name: card heading one, widget: string},{label: Card Heading Two, name: card heading two, widget: text},{label: Link Name, name: link name, widget: string},{label: Link Url, name: link url, widget: string}]}]}
       - file: 'markdown/homePage/freeLearning.md'
         label: "freeLearning"
         name: "freeLearning"
@@ -51,18 +51,18 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "curriki-stats"}
           - {label: Title, name: title, widget: string}
-          - { label: 'CurrikiStats Heading', name: 'currikiStats heading', widget: string }
-          - { label: 'CurrikiStats descrip', name: 'currikiStats descrip', widget: markdown }
-          - {label: Communitys, name: communitys, widget: object, fields: [{label: Community, name: community, widget: list, fields: [{ label: 'Community Logo', name: 'community logo', widget: image },{label: Community Numbers, name: community navbars, widget: string},{label: Community Names, name: community names, widget: string}]}]}
-          - {label: CurrikiStats Btn, name: currikiStats btn, widget: object, fields: [{ label: 'CrruikiBtn Text', name: 'crruikiBtn text', widget: string },{ label: 'CrruikiBtn Url', name: 'crruikiBtn url', widget: string }]}
+          - { label: 'CurrikiStats Heading', required: false, name: 'currikiStats heading', widget: string }
+          - { label: 'CurrikiStats description' , required: false, name: 'currikiStats descrip', widget: markdown }
+          - {label: Communitys, name: communitys, required: false, widget: object, fields: [{label: Community, name: community, widget: list, fields: [{ label: 'Community Logo', name: 'community logo', widget: image },{label: Community Numbers, name: community navbars, widget: string},{label: Community Names, name: community names, widget: string}]}]}
+          - {label: CurrikiStats Btn, name: currikiStats btn, required: false, widget: object, fields: [{ label: 'CrruikiBtn Text', name: 'crruikiBtn text', widget: string },{ label: 'CrruikiBtn Url', name: 'crruikiBtn url', widget: string }]}
       - file: 'markdown/homePage/learningTechnology.md'
         label: "LearningTechnology"
         name: "learningTechnology"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "learning-technology"}
           - {label: Title, name: title, widget: string}
-          - { label: 'LearningTechnology Heading', name: 'learningTechnology heading', widget: string }
-          - {label: Communitys, name: communitys, widget: object, fields: [{label: Community, name: community, widget: list, fields: [{ label: 'LearningTechnology logos', name: 'learningTechnology logos', widget: image }]}]}
+          - { label: 'LearningTechnology Heading',  name: 'learningTechnology heading',  required: false, widget: string }
+          - {label: Communitys, name: communitys,  required: false, widget: object, fields: [{label: Community, name: community, widget: list, fields: [{ label: 'LearningTechnology logos', name: 'learningTechnology logos', widget: image }]}]}
 
   - name: 'layout'
     label: 'Layout'
