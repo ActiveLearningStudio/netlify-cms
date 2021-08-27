@@ -1,5 +1,5 @@
-import React from 'react';
-import bg from '../../assets/images/HomePageSVG.svg';
+import React from "react";
+import bg from "../../assets/images/HomePageSVG.svg";
 const Hero = ({ data }) => {
   console.log(data);
   return (
@@ -18,7 +18,7 @@ const Hero = ({ data }) => {
           customize and publish content.
         </p>
       </div>
-      <img src={bg} alt="img" />
+      <img className="hero-bg-img" src={bg} alt="img" />
     </div>
   );
 };

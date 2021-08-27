@@ -8,25 +8,28 @@
   }
   .hero {
     display: flex;
-    max-width: 1440px;
-    padding: 100px 50px 100px 145px;
+    max-width: 1243.51px;
+    padding: 100px 0px 83.93px;
     margin: 0 auto;
+    justify-content: space-between;
+
+
 
     .content {
       max-width: 440px;
       flex-shrink: 0;
     }
 
-    h1 {
-      padding-bottom: 57px;
+    .headng-one {
+      padding-bottom: 50px;
     }
 
-    h4 {
+    .open-para-25 {
       padding-bottom: 15px;
     }
 
-    img {
-      width: 50%;
+    .hero-bg-img {
+      width: 756.51px;
       height: auto;
     }
   }
@@ -117,7 +120,7 @@
        max-width:980px;
        margin: 0 auto;
 
-   
+
 
       p{
         padding: 30px 10px 50px 10px
@@ -128,7 +131,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0px 100px;
-      
+
       .block {
         width:200px;
         padding: 10px;
@@ -176,14 +179,14 @@ margin: 50px auto 0px;
   padding-bottom: 5rem;
   .tech-heading{
     text-align: center;
-    
+
   }
   .tech-content{
     padding-top: 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
     img{
       width: 200px;
     }
@@ -194,7 +197,7 @@ margin: 50px auto 0px;
   width: 100%;
   height: 586px;
   .customer-content{
-    
+
     padding-top: 5rem;
     text-align: center;
     h2{
@@ -207,20 +210,20 @@ margin: 50px auto 0px;
      margin: auto;
      .qoute1{
       display: flex;
-      
+
      }
      .qoute2{
       display: flex;
-      
+
       margin-left: auto;
      }
       .slider-content{
-       
+
         text-align: center;
         display: flex;
         flex-direction: column;
-        
-        
+
+
         .author{
           display: flex;
           justify-content: center;
@@ -232,7 +235,7 @@ margin: 50px auto 0px;
             display: flex;
             flex-direction: column;
           }
-         
+
           span{
             color: #FFFFFF;
             padding-right: 1rem;
@@ -243,8 +246,8 @@ margin: 50px auto 0px;
           color:#FFFFFF;
         }
       }
-      
-      
+
+
     }
   }
 }
@@ -281,7 +284,7 @@ margin: 50px auto 0px;
           color: #FFFFFF;
           background-color: #084892;
         }
-        
+
       }
       h3{
         font-weight: bold;
@@ -308,7 +311,7 @@ margin: 50px auto 0px;
       margin-top: 10px;
     }
     .contact-us-form{
-      
+
       .name-group{
         display: flex;
         justify-content: space-between;
