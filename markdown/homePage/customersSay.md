@@ -1,4 +1,5 @@
 ---
+templateKey: customers-say
 title: customers-say
 customersSay heading: What our customers say
 customersSay slider:

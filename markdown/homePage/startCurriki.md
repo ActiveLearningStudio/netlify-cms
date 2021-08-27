@@ -1,4 +1,5 @@
 ---
+templateKey: start-curriki
 title: start with Curriki
 startCurriki heading: Ready to start with Curriki?
 startDemos:

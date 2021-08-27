@@ -100,16 +100,17 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "top-navbar"}
           - {label: Title, name: title, widget: string}
           - { label: 'Top Logo', name: 'top logo', widget: image }
-          - {label: Add Links, name: add links, widget: object, fields: [{label: Links, name: links, widget: list, fields: [{label: Link Name, name: link name, widget: string}, {label: URl, name: url, widget: string}]}]}
+          - {label: Add Links, name: add links, widget: object, fields: [{label: Links, name: links, widget: list, fields: [{label: Link Name, name: link name, widget: string}, {label: URl, required: false, name: url, widget: string},{label: Links, required: false, name: links, widget: list, fields: [{label: Link Name, required: false, name: link name, widget: string}, {label: URl, required: false, name: url, widget: string}]}]}]}
       - file: 'markdown/layout/footer.md'
         label: "Footer"
         name: "footer"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "footer-area"}
           - {label: Title, name: title, widget: string}
-          - {label: Pages, name: pages, widget: object, fields: [{label: page, name: page, widget: list, fields: [{label: PageName, name: pagename, widget: string}, {label: Page URl, name: pageurl, widget: string}]}]}
-          - { label: 'Footer Logo', name: 'footer logo', widget: image }
-          - {label: Powered By, name: powered by, widget: string}
+          - { label: 'Footer Logo',  required: false, name: 'footer logo', widget: image }
+          - {label: Pages,  required: false, name: pages, widget: object, fields: [{label: page, name: page, widget: list, fields: [{label: PageName, name: pagename, widget: string}, {label: Page URl, name: pageurl, widget: string}]}]}
+          - {label: Social Media Icon,  required: false, name: social media Icon, widget: object, fields: [{label: Icons, name: icons, widget: list, fields: [{label: SMIcon, name: SMIcon, widget: image}, {label: Icon URl, name: icon url, widget: string}]}]}
+          - {label: Powered By, name: powered by, widget: markdown}
 
   - name: "comingsoon page"
     label: "ComingSoon page"

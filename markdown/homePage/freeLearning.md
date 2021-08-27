@@ -1,4 +1,5 @@
 ---
+templateKey: free-learning
 title: free-learning
 freeLearning image: /img/studio_new_logo.png
 freeLearning heading one: Free learning content authoring solution with

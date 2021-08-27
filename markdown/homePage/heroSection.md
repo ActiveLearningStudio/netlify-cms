@@ -1,4 +1,5 @@
 ---
+templateKey: hero-section
 title: hero-section-home-page
 heading one: Shaping the future of learning
 heading two: Free and open technology to create interactive learning experiences
