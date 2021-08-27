@@ -1,4 +1,5 @@
 ---
+templateKey: curriki-stats
 title: Curriki stats
 currikiStats heading: Curriki stats
 currikiStats descrip: Curriki brings together a diverse and international

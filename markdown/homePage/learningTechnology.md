@@ -1,4 +1,5 @@
 ---
+templateKey: learning-technology
 title: learning-technology.
 learningTechnology heading: CurrikiStudio powers the world’s most innovative learning technology.
 communitys:

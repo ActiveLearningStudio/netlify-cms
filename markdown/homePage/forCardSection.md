@@ -1,4 +1,5 @@
 ---
+templateKey: for-cardsection
 title: curriki-for-purpose
 cards:
   card:
