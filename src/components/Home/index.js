@@ -5,6 +5,7 @@ import Create from './create-content';
 import Start from './start';
 import Technology from './technologies';
 import Stats from './stats';
+import Customers from './customers';
 import HomeData from './graphql';
 
 import './style.scss';
@@ -25,6 +26,7 @@ const Index = () => {
       </div>
       <Stats />
       <Technology />
+      <Customers/>
       <Start />
     </div>
   );

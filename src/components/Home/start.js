@@ -1,77 +1,195 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Formik,Field,TextArea } from 'formik';
+import bg from '../../assets/images/HomePageSVG.svg';
 
 const Start = () => {
   return (
     <>
-      <div className="et_pb_section et_pb_section_5 et_section_regular">
-        <div className="et_pb_row et_pb_row_15">
-          <div className="et_pb_column et_pb_column_4_4 et_pb_column_30  et_pb_css_mix_blend_mode_passthrough et-last-child">
-            <div className="et_pb_module et_pb_text et_pb_text_15 ft-text  et_pb_text_align_center et_pb_bg_layout_light">
-              <div className="et_pb_text_inner">
-                Ready to start with Curriki?
-              </div>
-            </div>{' '}
-            {/* .et_pb_text */}
-          </div>{' '}
-          {/* .et_pb_column */}
-        </div>{' '}
-        {/* .et_pb_row */}
-        <div className="et_pb_row et_pb_row_16">
-          <div className="et_pb_column et_pb_column_1_2 et_pb_column_31  et_pb_css_mix_blend_mode_passthrough">
-            <div className="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_center et_pb_bg_layout_light">
-              <div className="et_pb_text_inner">
-                <p>
-                  Try our{' '}
-                  <span style={{ color: '#ffb124' }}>demo environment</span>
-                </p>
-              </div>
-            </div>{' '}
-            {/* .et_pb_text */}
-            <div className="et_pb_module dsm_button dsm_button_0 btn-outline-primary et_pb_bg_layout_light">
-              <div className="et_pb_module_inner">
-                <div className="et_pb_button_module_wrapper dsm_button_0_wrapper et_pb_button_alignment_center">
-                  {' '}
-                  <a
-                    className="et_pb_button et_pb_button_one et_pb_bg_layout_light dsm-none"
-                    href="https://www.currikistudio.org/login"
-                    target="_blank"
-                  >
-                    SIGN UP
-                  </a>
-                </div>
-              </div>
+     <div className="start-section">
+    
+       <h2>Ready to start with Curriki?</h2>
+       <div className="start-content">
+         <div className="start-content-btn">
+             <div className="demo-btn">
+              <h3>Try our <span> demo environment</span></h3>
+             <span><Button size="sm" variant="outline-primary"> SIGN UP</Button></span> 
             </div>
-          </div>{' '}
-          {/* .et_pb_column */}
-          <div className="et_pb_column et_pb_column_1_2 et_pb_column_32  et_pb_css_mix_blend_mode_passthrough et-last-child">
-            <div className="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_center et_pb_bg_layout_light">
-              <div className="et_pb_text_inner">
-                <p>
-                  Register for{' '}
-                  <span style={{ color: '#ffb124' }}>monthly demo</span>
-                </p>
-              </div>
-            </div>{' '}
-            {/* .et_pb_text */}
-            <div className="et_pb_module dsm_button dsm_button_1 btn-outline-primary et_pb_bg_layout_light">
-              <div className="et_pb_module_inner">
-                <div className="et_pb_button_module_wrapper dsm_button_1_wrapper et_pb_button_alignment_center">
-                  {' '}
-                  <a
-                    className="et_pb_button et_pb_button_one et_pb_bg_layout_light dsm-none"
-                    href="https://us02web.zoom.us/webinar/register/WN_1nRX9E2xQBWEihgorbf0dw"
-                    target="_blank"
-                  >
-                    REGISTER
-                  </a>
-                </div>
-              </div>
+            <div className="demo-btn">
+              <h3>Register for<span> monthly demo </span></h3>
+              <span><Button  size="sm" variant="outline-primary"> Register</Button></span>
             </div>
-          </div>{' '}
-          {/* .et_pb_column */}
-        </div>{' '}
-        {/* .et_pb_row */}
-      </div>
+       </div>
+       
+       <div className="start-content-contact-us">
+       
+        <h3>
+          Contact us
+        </h3>
+        <p>
+        Want to learn more about how CurrikiStudio can work for<br></br> your organization?
+        </p>
+        <div className="main-content">
+
+       
+        <div className="contact-us-form">
+        <Formik
+       initialValues={{ email: '', password: '',fname:'',lname:'',companyName:'',
+       componayCategory:'',jobTitle:'',message:'' }}
+       validate={values => {
+         const errors = {};
+         if (!values.email) {
+           errors.email = 'Required';
+         } else if (
+           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+         ) {
+           errors.email = 'Invalid email address';
+         }
+         return errors;
+       }}
+       onSubmit={(values, { setSubmitting }) => {
+         setTimeout(() => {
+           alert(JSON.stringify(values, null, 2));
+           setSubmitting(false);
+         }, 400);
+       }}
+     >
+       {({
+         values,
+         errors,
+         touched,
+         handleChange,
+         handleBlur,
+         handleSubmit,
+         isSubmitting,
+         /* and other goodies */
+       }) => (
+         <form onSubmit={handleSubmit}>
+           <div className="name-group">
+           <div>
+           <label>First Name</label>
+           <input
+             type="text"
+             name="fname"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.fname}
+           />
+           </div>
+           <div>
+           <label>First Name</label>
+           <input
+             type="text"
+             name="fname"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.fname}
+           />
+           </div>
+            
+           </div>
+          
+           <div className="email-group">
+           <div>
+           <label>Email</label>
+           </div>
+           <div>
+           <input
+           
+           type="email"
+           name="email"
+           onChange={handleChange}
+           onBlur={handleBlur}
+           value={values.email}
+         />
+         {errors.email && touched.email && errors.email}
+           </div>
+           
+            
+           </div>
+           <div className="email-group">
+           <div>
+           <label>Company Name</label>
+           </div>
+           <div>
+           <input
+             type="text"
+             name="companyName"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.companyName}
+           />
+           </div>
+           
+            
+           </div>
+           
+           <div className="name-group">
+           <div>
+           <label>Company Category</label>
+           <div>
+           <Field name="color" as="select">
+             <option value="red">Red</option>
+           <option value="green">Green</option>
+             <option value="blue">Blue</option>
+            
+         </Field>
+         </div>
+           </div>
+           <div>
+           <label>Company Category</label>
+           <div>
+             <input
+             type="text"
+             name="companyName"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.companyName}
+           />
+           
+         </div>
+           </div>
+           
+            
+           </div>
+           
+          
+           <div className="email-group">
+           <div>
+           <label>Message</label>
+           </div>
+           <div>
+           <Field as="textarea"
+             type="text"
+             name="message"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.message}
+           />
+           </div>
+           
+            
+           </div>
+          
+           <button type="submit" disabled={isSubmitting}>
+             Submit
+           </button>
+         </form>
+       )}
+     </Formik>
+     <div>
+        
+        </div>
+        
+        </div>
+        <img src={bg} alt="img" />
+        </div>
+       </div>
+
+       </div>
+
+       
+     </div>
     </>
   );
 };
