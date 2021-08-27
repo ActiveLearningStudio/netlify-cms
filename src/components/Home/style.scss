@@ -179,11 +179,165 @@ margin: 50px auto 0px;
     
   }
   .tech-content{
+    padding-top: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     
     img{
       width: 200px;
+    }
+  }
+}
+.customer-section{
+  background: #084892;
+  width: 100%;
+  height: 586px;
+  .customer-content{
+    
+    padding-top: 5rem;
+    text-align: center;
+    h2{
+      color:#f8af2c!important;
+      font-weight: bold;
+    }
+    .customer-slider{
+      padding-top: 5rem;
+      max-width: 975px;
+     margin: auto;
+     .qoute1{
+      display: flex;
+      
+     }
+     .qoute2{
+      display: flex;
+      
+      margin-left: auto;
+     }
+      .slider-content{
+       
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+        
+        .author{
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          .author-name{
+            display: flex;
+            flex-direction: column;
+          }
+         
+          span{
+            color: #FFFFFF;
+            padding-right: 1rem;
+          }
+        }
+        p{
+          font-size: 25px;
+          color:#FFFFFF;
+        }
+      }
+      
+      
+    }
+  }
+}
+
+.start-section{
+  width: 100%;
+  height: 919.9px;
+  padding-top: 5rem;
+
+  h2{
+    color: #084892;
+    text-align: center;
+    font-weight: bold;
+  }
+  .start-content{
+    width: 60%;
+    margin: auto;
+    .start-content-btn{
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 2rem;
+      .demo-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        Button{
+          margin-top: 1rem;
+          border-radius: 20px;
+          color: #084892;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        Button:hover{
+          color: #FFFFFF;
+          background-color: #084892;
+        }
+        
+      }
+      h3{
+        font-weight: bold;
+        color: #084892;
+      }
+      span{
+        color: #f8af2c;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .start-content-contact-us{
+    margin-top: 8rem;
+    width: 50%;
+    .main-content{
+      display: flex;
+    }
+    h3{
+      color: #084892;
+        font-weight: bold;
+    }
+    p{
+      margin-top: 10px;
+    }
+    .contact-us-form{
+      
+      .name-group{
+        display: flex;
+        justify-content: space-between;
+      }
+      .email-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        input[type="email"],input[name="companyName"]{
+          width: 100%;
+        }
+      }
+      input{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+        color: #33475b;
+        border: 1px solid #cbd6e2;
+        border-radius: 15px;
+        background-color: #f5f8fa;
+        height: 30px;
+        padding: 0px 15px;
+
+
+      }
+      input:focus{
+        outline: none;
+        border: 1px solid #74b9ef;
+      }
     }
   }
 }

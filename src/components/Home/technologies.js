@@ -1,5 +1,6 @@
 import React from 'react';
 import currikiimg from '../../assets/images/studio_new_logo_small.png'
+import Vivenesity from '../../../src/img/Vivensity.svg';
 import './style.scss';
 const Technology = () => {
   return (
@@ -15,7 +16,19 @@ const Technology = () => {
          <img src={currikiimg}></img>
        </span>
        <span>
+         <img src={Vivenesity}></img>
+       </span>
+       <span>
          <img src={currikiimg}></img>
+       </span>
+       <span>
+         <img src={Vivenesity}></img>
+       </span>
+       <span>
+         <img src={currikiimg}></img>
+       </span>
+       <span>
+         <img src={Vivenesity}></img>
        </span>
        <span>
          <img src={currikiimg}></img>
