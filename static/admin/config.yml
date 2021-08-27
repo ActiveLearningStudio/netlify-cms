@@ -14,6 +14,56 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'home page'
+    label: 'Home Page'
+    files:
+      - file: 'markdown/homePage/heroSection.md'
+        label: "heroSection"
+        name: "heroSection"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "hero-section"}
+          - {label: Title, name: title, widget: string}
+          - { label: 'Heading One', name: 'heading one', widget: string }
+          - { label: 'Heading Two', name: 'heading two', widget: text }
+          - { label: 'Heading Three', name: 'heading Three', widget: text }
+          - { label: 'Hero Image', name: 'hero image', widget: image }
+      - file: 'markdown/homePage/forCardSection.md'
+        label: "forCardSection"
+        name: "forCardSection"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "for-cardsection"}
+          - {label: Title, name: title, widget: string}
+          - {label: Cards, name: cards, widget: object, fields: [{label: Card, name: card, widget: list, fields: [{ label: 'Card Logo', name: 'card logo', widget: image },{label: Card Heading One, name: card heading one, widget: string},{label: Card Heading Two, name: card heading two, widget: text},{label: Link Name, name: link name, widget: string},{label: Link Url, name: link url, widget: string}]}]}
+      - file: 'markdown/homePage/freeLearning.md'
+        label: "freeLearning"
+        name: "freeLearning"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "free-learning"}
+          - {label: Title, name: title, widget: string}
+          - { label: 'FreeLearning Image', name: 'freeLearning image', widget: image }
+          - { label: 'FreeLearning Heading One', name: 'freeLearning heading one', widget: text }
+          - {label: Platfroms, name: platfroms, widget: object, fields: [{label: Platfrom, name: platfrom, widget: list, fields: [{ label: 'Platfrom Logo', name: 'platfrom logo', widget: image },{label: Platfrom Heading, name: platfrom heading, widget: markdown}]}]}
+          - { label: 'FreeLearning Heading Two', name: 'freeLearning heading two', widget: string }
+          - {label: FreeLearning Btn, name: freeLearning btn, widget: object, fields: [{ label: 'Btn Text', name: 'btn text', widget: string },{ label: 'Btn Url', name: 'btn url', widget: string }]}
+      - file: 'markdown/homePage/currikiStats.md'
+        label: "CurrikiStats"
+        name: "currikiStats"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "curriki-stats"}
+          - {label: Title, name: title, widget: string}
+          - { label: 'CurrikiStats Heading', name: 'currikiStats heading', widget: string }
+          - { label: 'CurrikiStats descrip', name: 'currikiStats descrip', widget: markdown }
+          - {label: Communitys, name: communitys, widget: object, fields: [{label: Community, name: community, widget: list, fields: [{ label: 'Community Logo', name: 'community logo', widget: image },{label: Community Numbers, name: community navbars, widget: string},{label: Community Names, name: community names, widget: string}]}]}
+          - {label: CurrikiStats Btn, name: currikiStats btn, widget: object, fields: [{ label: 'CrruikiBtn Text', name: 'crruikiBtn text', widget: string },{ label: 'CrruikiBtn Url', name: 'crruikiBtn url', widget: string }]}
+      - file: 'markdown/homePage/learningTechnology.md'
+        label: "LearningTechnology"
+        name: "learningTechnology"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "learning-technology"}
+          - {label: Title, name: title, widget: string}
+          - { label: 'LearningTechnology Heading', name: 'learningTechnology heading', widget: string }
+          - {label: Communitys, name: communitys, widget: object, fields: [{label: Community, name: community, widget: list, fields: [{ label: 'LearningTechnology logos', name: 'learningTechnology logos', widget: image }]}]}
+
   - name: 'layout'
     label: 'Layout'
     files:
@@ -44,13 +94,8 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coming-soon"}
           - {label:  Title, name: title, widget: string}
-          - { label: 'Coming Image', name: 'coming image', widget: image }            
-          - {label:  Description, name: description, widget: markdown}   
-
-    
-       
-
-          
+          - { label: 'Coming Image', name: 'coming image', widget: image }
+          - {label:  Description, name: description, widget: markdown}
 
 
-    
+
