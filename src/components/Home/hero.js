@@ -22,5 +22,4 @@ const Hero = ({ data }) => {
     </div>
   );
 };
-
 export default Hero;

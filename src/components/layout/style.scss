@@ -6,7 +6,7 @@ p {
 .navbar {
   position: fixed;
   width: 100%;
-  height: 90px;
+  // height: 90px;
   // height: 80px;
   box-shadow: 0 5px 6px rgb(0 0 0 / 15%);
   // z-index: 111;
@@ -18,7 +18,6 @@ p {
 
   .navbar-brand {
     width: 230px;
-    padding-left: 40%;
 
     @media (max-width: 767px) {
       width: 175px;
@@ -126,7 +125,7 @@ p {
       font-size: 10px;
       color: #515151;
     }
-    
+
   }
 }
 
@@ -146,7 +145,7 @@ p {
 .footer-section{
     width: 100%;
     height: 202px;
-    
+
     background-image: url('../../assets/images/footer-img.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -173,16 +172,16 @@ p {
             line-height: 18.96px;
             font-weight: 500;
         }
-            
-            
+
+
         }
     }
 }
 .bottom-footer{
   width: 100%;
   height: 60px;
-  background-color: #1F4071;  
-  
+  background-color: #1F4071;
+
   p{
       color:#FFFFFF;
       a{
