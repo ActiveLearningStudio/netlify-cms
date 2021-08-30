@@ -6,19 +6,21 @@ const Hero = ({ data }) => {
     <div className="hero">
       <div className="content">
         <h1 className="headng-one open-blue">
-          Shaping the
-          <br /> <span className="open-yellow">future</span> of learning
+          {data.frontmatter.heading_one}
+          {/* <br /> <span className="open-yellow-1">future</span> of learning */}
         </h1>
         <h4 className="open-para-25 open-blue open-thin">
-          Free and open technology to create interactive learning experiences
+          {data.frontmatter.heading_two}{" "}
         </h4>
         <p className="open-para-18 open-gray">
-          Curriki is dedicated to making interactive learning experiences
-          accessible for everyone, by providing free and open tools to design,
-          customize and publish content.
+          {data.frontmatter.heading_Three}
         </p>
       </div>
-      <img className="hero-bg-img" src={bg} alt="img" />
+      <img
+        className="hero-bg-img"
+        src={data.frontmatter.hero_image}
+        alt="img"
+      />
     </div>
   );
 };

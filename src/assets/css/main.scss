@@ -71,6 +71,9 @@ h1,h2,h3,h4,h5,h6,p {
 .open-blue {
     color:#084892;
 }
+.open-white.for-para{
+	padding-bottom: 1rem;
+}
 
 .open-white {
 	color: #fff
@@ -80,9 +83,13 @@ h1,h2,h3,h4,h5,h6,p {
 	color: #515151;
 }
 
-.open-yellow {
+.open-yellow-1 {
 	color:  #FFB124;
 	border-bottom: 3px solid #FFB124;
+}
+.open-yellow{
+	color:  #FFB124;
+	padding-bottom: 10px;
 }
 
 .open-normal {

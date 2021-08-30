@@ -14,7 +14,7 @@ const Index = () => {
   const result = HomeData();
 
   const HeroData = result?.allMarkdownRemark?.nodes.filter(
-    (node) => node.frontmatter.templateKey === 'hero'
+    (node) => node.frontmatter.templateKey === 'hero-section'
   )?.[0];
 
   return (
