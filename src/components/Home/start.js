@@ -28,7 +28,7 @@ const Start = ({data}) => {
             
           </div>
 
-          <div className="start-content-contact-us">
+          {/* <div className="start-content-contact-us">
             <h3 className="content-title">Contact us</h3>
             <p className="content-text">
               Want to learn more about how CurrikiStudio can work for your
@@ -75,7 +75,7 @@ const Start = ({data}) => {
                     handleBlur,
                     handleSubmit,
                     isSubmitting,
-                    /* and other goodies */
+                    /* and other goodies 
                   }) => (
                     <form onSubmit={handleSubmit}>
                       <div className="name-group">
@@ -199,7 +199,7 @@ const Start = ({data}) => {
               </div>
               <img className="content-img" src={bg} alt="img" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

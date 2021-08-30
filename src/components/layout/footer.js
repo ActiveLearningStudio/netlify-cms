@@ -1,7 +1,7 @@
 import React from 'react';
 import di from '../../assets/images/Di.svg';
 import './style.scss';
-
+import ReactMarkdown from 'react-markdown'
 const Footer = ({ data }) => {
   console.log(data);
   return (
@@ -35,7 +35,8 @@ const Footer = ({ data }) => {
       </div>
       <div className="bottom-footer text-center">
         <p className="pt-4">
-        {data.frontmatter.powered_by}
+        <ReactMarkdown  children={data.frontmatter.powered_by} />,
+        
         </p>
       </div>
     </div>

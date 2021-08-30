@@ -8,7 +8,8 @@ const TopNavbar = ({ data }) => {
   console.log(data);
   return (
     <>
-      <Navbar expand="lg" className="navbar">
+    <div>
+      <Navbar expand="xl" className="navbar">
         <Navbar.Brand
           style={{
             backgroundImage: `url(${data.frontmatter.top_logo})`,
@@ -45,6 +46,7 @@ const TopNavbar = ({ data }) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      </div>
     </>
   );
 };

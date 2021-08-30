@@ -3,6 +3,7 @@ import img1 from "../../assets/images/BringyourideasSVG.svg";
 import img2 from "../../assets/images/contentAnywhereSVG.svg";
 import img3 from "../../assets/images/weAreFreeSVG.svg";
 import logo from "../../assets/images/studio_new_logo_small.png";
+import ReactMarkdown from 'react-markdown';
 const Create = ({data}) => {
   
   // console.log(data);
@@ -22,7 +23,7 @@ const Create = ({data}) => {
                   <img className="block-img" src={platform.platfrom_logo} alt="" />
                   <div className="block-text">
                     <p className="open-para-18 open-gray open-rubik ">
-                      {platform.platfrom_heading}
+                       <ReactMarkdown  children={platform.platfrom_heading}/>,
                     </p>
                   </div>
                 </div>
