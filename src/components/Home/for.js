@@ -2,15 +2,15 @@ import React from "react";
 import For1 from "../../assets/images/for_1.svg";
 import For2 from "../../assets/images/for_2.svg";
 const For = ({data}) => {
-  // console.log(data);
+   console.log(data);
   
   return (
     <div className="for-edu">
-       {data.frontmatter.cards.card.map((key) => {
+       {data.frontmatter.cards.card.map((card) => {
               return (
                 <div
         style={{
-          backgroundImage: `url(${For2})`,
+          backgroundImage: `url(${card.card_logo})`,
           backgroundPosition: "left",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
@@ -18,17 +18,17 @@ const For = ({data}) => {
         className="block"
       >
         <div className="content">
-          <h4 className="open-para-25 open-yellow">{key.card_heading_one}</h4>
+          <h4 className="open-para-25 open-yellow">{card.card_heading_one}</h4>
 
           <p className="open-para-18 open-white for-para">
-          {key.card_heading_two}
+          {card.card_heading_two}
           </p>
 
           <a
             className="open-para-18 open-white open-rubik open-semi"
-            href={key.link_url}
+            href={card.link_url}
           >
-           {key.link_name} &gt;
+           {card.link_name} &gt;
           </a>
         </div>
       </div>
