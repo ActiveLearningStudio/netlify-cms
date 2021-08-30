@@ -48,6 +48,7 @@ p {
       z-index: 999;
       border-top: 3px solid #2ea3f2;
     }
+   
   }
   .navbar-nav {
     margin-left: auto;
@@ -192,6 +193,10 @@ p {
     @media (max-width:768px){
       padding: 0 10px;
     }
+    @media (max-width:1024px){
+      padding: 0 40px;
+      
+    }
     .footer-container{
       max-width: 1150px;
       margin: auto;
@@ -208,6 +213,10 @@ p {
         width: 240px;
         @media (max-width:768px){
           margin-bottom: 50px;
+        }
+        @media (max-width:1024px){
+          margin-right: 40px;
+          
         }
     }
       .footer-content{
