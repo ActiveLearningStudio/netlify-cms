@@ -27,22 +27,23 @@ const TopNavbar = ({ data }) => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ml-auto" navbarScroll>
-            {data.frontmatter.add_links.links.map((link => {
-              if(link.links) {
-               return <NavDropdown title={link.link_name} id="basic-nav-dropdown">
-                  {link.links.map(child => {
-                    return   <NavDropdown.Item href={child.url}>{child.link_name}</NavDropdown.Item>
-                  })}
-                
-              
-              </NavDropdown>
+            {data.frontmatter.add_links.links.map((link) => {
+              if (link.links && link.links?.length !== 0) {
+                return (
+                  <NavDropdown title={link.link_name} id="basic-nav-dropdown">
+                    {link.links.map((child) => {
+                      return (
+                        <NavDropdown.Item href={child.url}>
+                          {child.link_name}
+                        </NavDropdown.Item>
+                      );
+                    })}
+                  </NavDropdown>
+                );
               } else {
-               return <Nav.Link href={link.url}>{link.link_name}</Nav.Link>
+                return <Nav.Link href={link.url}>{link.link_name}</Nav.Link>;
               }
-            }))}
-           
-           
-         
+            })}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
