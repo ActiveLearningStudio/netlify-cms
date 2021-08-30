@@ -1,9 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import { Link } from 'gatsby';
-import navLogo from '../../assets/images/User1.svg';
-import di from '../../assets/images/Di.svg';
+
 import './style.scss';
 
 const TopNavbar = ({ data }) => {
