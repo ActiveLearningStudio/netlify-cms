@@ -2,29 +2,30 @@ import React from "react";
 import { Formik, Field, TextArea } from "formik";
 import bg from "../../assets/images/HomePageSVG.svg";
 
-const Start = () => {
+const Start = ({data}) => {
+  console.log(data);
   return (
     <>
       <div className="start-section">
-        <h2 className="start-title">Ready to start with Curriki?</h2>
+        <h2 className="start-title">{data.frontmatter.startCurriki_heading}</h2>
         <div className="start-content">
           <div className="start-content-btn">
-            <div className="demo-title">
-              <h3 className="start-damo">
-                Try our <span> demo environment</span>
-              </h3>
-              <a href="http://" className="damo-btn">
-                SIGN UP
-              </a>
-            </div>
-            <div className="demo-title">
-              <h3 className="start-damo">
-                Register for<span> monthly demo </span>
-              </h3>
-              <a href="http://" className="damo-btn">
-                Register
-              </a>
-            </div>
+            {data.frontmatter.startDemos.demo.map((demo)=>{
+              return (
+                <div className="demo-title">
+                <h3 className="start-damo">
+                  {/* Try our  */}
+                  <span> {demo.demo_title}</span>
+                </h3>
+                <a href={demo.demos_btn.demoBtn_url} className="damo-btn">
+                 {demo.demos_btn.demoBtn_text}
+                </a>
+              </div>
+              )
+            
+            })}
+            
+            
           </div>
 
           <div className="start-content-contact-us">
