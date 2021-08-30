@@ -222,6 +222,10 @@ p {
 
         ul{
           padding-left: 0;
+          column-count: 3;
+          @media(max-width:767px) {
+            column-count: 2;
+          }
           li{
               list-style-type: none;
               margin-bottom: 15px;
