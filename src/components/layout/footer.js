@@ -1,72 +1,42 @@
-import React from "react";
-import { Link } from "gatsby";
-import fotLogo from "../../assets/images/curriki_new_logo 1.png";
-import di from "../../assets/images/Di.svg";
-import "./style.scss";
-
+import React from 'react';
+import di from '../../assets/images/Di.svg';
+import './style.scss';
+import ReactMarkdown from 'react-markdown'
 const Footer = ({ data }) => {
+  console.log(data);
   return (
     <div>
       <div className="footer-section">
         <div className="footer-container">
           <div>
-            <img className="logo" src={fotLogo}></img>
+            <img className="logo" src={data.frontmatter.footer_logo}></img>
           </div>
           <div className="footer-content">
-            <div className="col-1">
-              <ul>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Webinars</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-2">
-              <ul>
-                <li>
-                  <a href="#">Press</a>
-                </li>
-                <li>
-                  <a href="#">Providers</a>
-                </li>
-                <li>
-                  <a href="#">Dnate</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-3">
-              <ul>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Terms of Service</a>
-                </li>
-              </ul>
-            </div>
+            <ul>
+              {data.frontmatter.pages.page.map((link) => {
+                return (
+                  <li>
+                    <a href={link.pageurl}>{link.pagename}</a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
           <div className="scoil-icons">
-            <img src={di} alt="dd" />
-            <img src={di} alt="fd" />
-            <img src={di} alt="d" />
-            <img src={di} alt="ds" />
-            <img src={di} alt="sd" />
+          {/* {data.frontmatter.social_media_Icon.icons.map((link) => {
+                return (
+                <a href={link.icon_url} target="_blank">  <img src={link.SMIcon} alt="sd" /></a>
+                );
+              })}
+         */}
+          
           </div>
         </div>
       </div>
       <div className="bottom-footer text-center">
         <p className="pt-4">
-          {" "}
-          <a href="http://curriki.org">curriki.org </a>2004-2021 © Curriki a
-          501.c.3 Nonprofit
+        <ReactMarkdown  children={data.frontmatter.powered_by} />,
+        
         </p>
       </div>
     </div>

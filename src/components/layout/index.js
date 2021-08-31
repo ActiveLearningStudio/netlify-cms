@@ -2,43 +2,20 @@ import React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import { useStaticQuery, graphql} from 'gatsby';
-
+import HomeData from '../Home/graphql';
 import '../../assets/css/index.scss';
+
 const Index = ({children}) => {
-    const data = useStaticQuery(graphql`
-        query layoutQuery {
-            allMarkdownRemark {
-            nodes {
-                frontmatter {
-                top_logo
-                add_links {
-                    links {
-                    link_name
-                    url
-                    }
-                }
-                pages {
-                    page {
-                    pagename
-                    pageurl
-                    }
-                }
-                footer_logo
-                powered_by
-                templateKey
-                }
-            }
-            }
-        }
-   `);
+  const result = HomeData();
+   
+   const navigation = result?.allMarkdownRemark?.nodes.filter(
+    (node) => node.frontmatter.templateKey === 'top-navbar'
+  )?.[0];
 
-   const {
-    allMarkdownRemark: { nodes }
-   } = data;
-
-   const navigation = nodes.filter(data => data.frontmatter.templateKey === 'top-navbar')?.[0]
-   const footerdata = nodes.filter(data => data.frontmatter.templateKey === 'footer-area')?.[0]
-
+  const footerdata = result?.allMarkdownRemark?.nodes.filter(
+    (node) => node.frontmatter.templateKey === 'footer-area'
+  )?.[0];
+   
     
     return (
         <>
@@ -46,7 +23,7 @@ const Index = ({children}) => {
             <main>
                 <div>{children}</div>
             </main>
-        <Footer data={footerdata} />
+        <Footer data={footerdata}  />
         </>
     )
 }

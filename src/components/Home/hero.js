@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../../assets/images/HomePageSVG.svg";
 const Hero = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="hero">
       <div className="content">
