@@ -9,6 +9,9 @@ add links:
       links: []
     - link name: Search
       url: https://open.curriki.org/search
+      links:
+        - link name: test
+          url: test
     - link name: My Account
       url: https://open.curriki.org/studio
 ---
