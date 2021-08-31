@@ -7,6 +7,8 @@ add links:
     - link name: Studio
       url: https://open.curriki.org/studio
       links: []
-    - link name: Login
-      url: https://www.currikistudio.org/
+    - link name: Search
+      url: https://open.curriki.org/search
+    - link name: My Account
+      url: https://open.curriki.org/studio
 ---
