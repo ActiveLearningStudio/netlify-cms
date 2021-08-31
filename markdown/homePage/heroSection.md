@@ -1,7 +1,7 @@
 ---
 templateKey: hero-section
 title: hero-section-home-page
-heading one: Open Education + Open Content = Freedom!
+heading one: Open Technology + Open Content = OPENEDUCATION!
 heading two: Only open technology and openly licensed content can change the
   future of learning.
 heading Three: >-
