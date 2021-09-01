@@ -89,6 +89,20 @@ collections:
           - { label: 'ContactHeading Two', required: false,   name: 'contactheading two', widget: text }
           - { label: 'ContactUs Btn', required: false,  name: 'contactUs btn', widget: string }
           - { label: 'ContactUs Image', required: false,  name: 'contactUs image', widget: image }
+      - file: 'markdown/homePage/settings.md'
+        label: "Settings"
+        name: "setting"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "setting"}
+          - {label: Title, name: title, widget: string}
+          - { label: 'Hero Section ', required: false, name: 'heroSection', widget: boolean, default: true}
+          - { label: 'For Card ', required: false, name: 'forCard', widget: boolean, default: true}
+          - { label: 'Free Learning ', required: false, name: 'freeLearning', widget: boolean, default: true}
+          - { label: 'Curriki Stats ', required: false, name: 'currikiStats', widget: boolean, default: true}
+          - { label: 'Learning Technology ', required: false, name: 'learningTechnology', widget: boolean, default: true}
+          - { label: 'Customers Say ', required: false, name: 'customersSay', widget: boolean, default: true}
+          - { label: 'Start Curriki ', required: false, name: 'startCurriki', widget: boolean, default: true}
+          - { label: 'Contact Us ', required: false, name: 'contactUs', widget: boolean, default: true}
 
   - name: 'layout'
     label: 'Layout'
@@ -100,7 +114,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "top-navbar"}
           - {label: Title, name: title, widget: string}
           - { label: 'Top Logo', name: 'top logo', widget: image }
-          - {label: Add Links, name: add links, widget: object, fields: [{label: Links, name: links, widget: list, fields: [{label: Link Name, name: link name, widget: string}, {label: URl, required: false, name: url, widget: string},{label: Links, required: false, name: links, widget: list, fields: [{label: Link Name, required: false, name: link name, widget: string}, {label: URl, required: false, name: url, widget: string}]}]}]}
+          - {label: Add Links, name: add links, widget: object, fields: [{label: Links, name: links, widget: list, fields: [{label: Link Name, name: link name, widget: string}, {label: URl, required: false, name: url, widget: string}]}]}
       - file: 'markdown/layout/footer.md'
         label: "Footer"
         name: "footer"
@@ -111,18 +125,4 @@ collections:
           - {label: Pages,  required: false, name: pages, widget: object, fields: [{label: page, name: page, widget: list, fields: [{label: PageName, name: pagename, widget: string}, {label: Page URl, name: pageurl, widget: string}]}]}
           - {label: Social Media Icon,  required: false, name: social media Icon, widget: object, fields: [{label: Icons, name: icons, widget: list, fields: [{label: SMIcon, name: SMIcon, widget: image}, {label: Icon URl, name: icon url, widget: string}]}]}
           - {label: Powered By, name: powered by, widget: markdown}
-
-  - name: "comingsoon page"
-    label: "ComingSoon page"
-    files:
-      - file: "markdown/comingsoonpage/comingsoon.md"
-        label: "ComingSoon"
-        name: "comingsoon"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coming-soon"}
-          - {label:  Title, name: title, widget: string}
-          - { label: 'Coming Image', name: 'coming image', widget: image }
-          - {label:  Description, name: description, widget: markdown}
-
-
 

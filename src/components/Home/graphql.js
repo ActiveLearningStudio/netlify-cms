@@ -1,5 +1,5 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+// import React from 'react';
+import { useStaticQuery, graphql } from "gatsby";
 export default function Moneytrasferdata() {
   const HomeData = useStaticQuery(
     graphql`
@@ -7,14 +7,9 @@ export default function Moneytrasferdata() {
         allMarkdownRemark {
           nodes {
             frontmatter {
-              
               add_links {
                 links {
                   link_name
-                  links {
-                    link_name
-                    url
-                  }
                   url
                 }
               }
