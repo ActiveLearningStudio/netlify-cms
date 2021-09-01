@@ -40,17 +40,21 @@ const Index = () => {
     (node) => node.frontmatter.templateKey === "start-curriki"
   )?.[0];
 
+  const settingData = result?.allMarkdownRemark?.nodes.filter(
+    (node) => node.frontmatter.templateKey === "setting"
+  )?.[0];
+
   return (
     <div className="home-page">
       <div className="bg-section">
-        <Hero data={HeroData} />
-        <For data={ForData} />
-        <Create data={FreeLearnData} />
+        {settingData.heroSection && <Hero data={HeroData} />}
+        {settingData.forCard && <For data={ForData} />}
+        {settingData.freeLearning && <Create data={FreeLearnData} />}
       </div>
-      <Stats data={StatsData} />
-      <Technology data={techData} />
-      <Customers data={customerData} />
-      <Start data={startData} />
+      {settingData.currikiStats && <Stats data={StatsData} />}
+      {settingData.learningTechnology && <Technology data={techData} />}
+      {settingData.customersSay && <Customers data={customerData} />}
+      {settingData.startCurriki && <Start data={startData} />}
     </div>
   );
 };

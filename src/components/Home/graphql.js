@@ -7,6 +7,15 @@ export default function Moneytrasferdata() {
         allMarkdownRemark {
           nodes {
             frontmatter {
+              templateKey
+              heroSection
+              forCard
+              contactUs
+              currikiStats
+              customersSay
+              freeLearning
+              learningTechnology
+              startCurriki
               add_links {
                 links {
                   link_name
