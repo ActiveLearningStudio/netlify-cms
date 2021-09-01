@@ -43,18 +43,18 @@ const Index = () => {
   const settingData = result?.allMarkdownRemark?.nodes.filter(
     (node) => node.frontmatter.templateKey === "setting"
   )?.[0];
-
+  console.log(settingData)
   return (
     <div className="home-page">
       <div className="bg-section">
-        {settingData.heroSection && <Hero data={HeroData} />}
-        {settingData.forCard && <For data={ForData} />}
-        {settingData.freeLearning && <Create data={FreeLearnData} />}
+        {settingData.frontmatter.heroSection && <Hero data={HeroData} />}
+        {settingData.frontmatter.forCard && <For data={ForData} />}
+        {settingData.frontmatter.freeLearning && <Create data={FreeLearnData} />}
       </div>
-      {settingData.currikiStats && <Stats data={StatsData} />}
-      {settingData.learningTechnology && <Technology data={techData} />}
-      {settingData.customersSay && <Customers data={customerData} />}
-      {settingData.startCurriki && <Start data={startData} />}
+      {settingData.frontmatter.currikiStats && <Stats data={StatsData} />}
+      {settingData.frontmatter.learningTechnology && <Technology data={techData} />}
+      {settingData.frontmatter.customersSay && <Customers data={customerData} />}
+      {settingData.frontmatter.startCurriki && <Start data={startData} />}
     </div>
   );
 };

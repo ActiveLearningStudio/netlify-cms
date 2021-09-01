@@ -8,7 +8,7 @@ export default function Template( ) {
       <Layout> 
         <iframe
 		 style={{ width: '100%', height: '100vh', marginTop: '100px'}} 
-	     src="https://dev.currikistudio.org/opensearch"	
+	     src="https://open.curriki.org/studio/opensearch"	
 		>
 		</iframe>
       </Layout>
