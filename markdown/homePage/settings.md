@@ -1,9 +1,9 @@
 ---
 title: "Settings "
-heroSection: true
-forCard: true
-freeLearning: true
-currikiStats: true
+heroSection: false
+forCard: false
+freeLearning: false
+currikiStats: false
 learningTechnology: true
 customersSay: true
 startCurriki: true
