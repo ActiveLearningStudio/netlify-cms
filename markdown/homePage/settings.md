@@ -1,6 +1,6 @@
 ---
 title: "Settings "
-heroSection: false
+heroSection: true
 forCard: true
 freeLearning: true
 currikiStats: true
