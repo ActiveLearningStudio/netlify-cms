@@ -7,37 +7,9 @@ add links:
     - link name: Studio
       url: https://open.curriki.org/studio
       links: []
-    - url: https://www.curriki.org/support-our-mission/#
-      link name: Customers
-      links:
-        - url: https://www.curriki.org/educators/
-          link name: Educators
-        - url: https://www.curriki.org/businesses/
-          link name: Businesses
-        - url: https://www.curriki.org/showcase/
-          link name: Success Stories
-    - link name: Community
-      url: https://www.curriki.org/support-our-mission/#
-      links:
-        - link name: Explore
-          url: https://www.curriki.org/support-our-mission/#
-        - link name: Providers
-          url: https://www.curriki.org/providers/
-        - link name: Blog
-          url: https://www.curriki.org/blog/
-        - link name: Webinars
-          url: https://www.curriki.org/webinars/
-    - link name: Company
-      url: https://www.curriki.org/support-our-mission/#
-      links:
-        - link name: About
-          url: https://www.curriki.org/about/
-        - link name: Support our mission
-          url: https://www.curriki.org/support-our-mission/
-        - link name: Press
-          url: https://www.curriki.org/press/
-    - link name: Login
-      url: https://www.currikistudio.org/
-    - link name: Donate
-      url: https://www.curriki.org/support-our-mission/
+    - link name: Search
+      url: https://open.curriki.org/search
+      links: []
+    - link name: My Account
+      url: https://open.curriki.org/studio
 ---
