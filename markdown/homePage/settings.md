@@ -1,12 +1,12 @@
 ---
 templateKey: setting
 title: "Settings "
-heroSection: false
-forCard: false
-freeLearning: false
-currikiStats: false
-learningTechnology: false
-customersSay: false
-startCurriki: false
-contactUs: false
+heroSection: true
+forCard: true
+freeLearning: true
+currikiStats: true
+learningTechnology: true
+customersSay: true
+startCurriki: true
+contactUs: true
 ---
