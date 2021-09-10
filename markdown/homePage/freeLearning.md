@@ -1,7 +1,7 @@
 ---
 templateKey: free-learning
 title: free-learning
-freeLearning image: /img/studio_new_logo.png
+freeLearning image: ""
 freeLearning heading one: Free learning content authoring solution with
   one-click publishing to share content to any platform.
 platfroms:
