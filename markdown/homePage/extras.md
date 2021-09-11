@@ -10,4 +10,11 @@ communitys:
 currikiStats btn:
   crruikiBtn text: extra
   crruikiBtn url: extra
+cards:
+  card:
+    - card heading one: extra
+      card heading two: extra
+      link name: extra
+      link url: extra
+      card logo: /img/blog-index.jpg
 ---
