@@ -36,4 +36,8 @@ startDemos:
       demos btn:
         demoBtn text: extra
         demoBtn url: extra
+social media Icon:
+  icons:
+    - SMIcon: /img/education-publishing.svg
+      icon url: extra
 ---
