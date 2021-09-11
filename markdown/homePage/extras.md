@@ -17,4 +17,23 @@ cards:
       link name: extra
       link url: extra
       card logo: /img/blog-index.jpg
+platfroms:
+  platfrom:
+    - platfrom logo: /img/14_contact-1.svg
+      platfrom heading: extra
+freeLearning heading two: extra
+freeLearning btn:
+  btn text: extra
+  btn url: extra
+customersSay slider:
+  slider:
+    - slider descrip: extra
+      user name: extra
+      user image: /img/14_contact-1.svg
+startDemos:
+  demo:
+    - demo title: extra
+      demos btn:
+        demoBtn text: extra
+        demoBtn url: extra
 ---
