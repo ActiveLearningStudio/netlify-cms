@@ -23,17 +23,7 @@ pages:
     - pagename: Terms of Service
       pageurl: https://www.curriki.org/terms-of-service/
 social media Icon:
-  icons:
-    - icon url: https://twitter.com/curriki
-      SMIcon: /img/safari-pinned-tab.svg
-    - SMIcon: /img/favicon-16x16.png
-      icon url: https://twitter.com/curriki
-    - SMIcon: /img/usercircle-1.svg
-      icon url: https://twitter.com/curriki
-    - SMIcon: /img/safari-pinned-tab.svg
-      icon url: https://twitter.com/curriki
-    - SMIcon: /img/projects-home.svg
-      icon url: https://twitter.com/curriki
+  icons: []
 powered by: "[curriki.org](https://www.curriki.org/curriki.org) 2004-2021 ©
   Curriki a 501.c.3 Nonprofit"
 ---
