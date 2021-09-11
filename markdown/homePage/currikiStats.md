@@ -7,5 +7,5 @@ communitys:
   community: []
 currikiStats btn:
   crruikiBtn url: https://www.curriki.org/showcase/
-  crruikiBtn text: Cool Stuff Created with OpenLearnX
+  crruikiBtn text: ""
 ---
