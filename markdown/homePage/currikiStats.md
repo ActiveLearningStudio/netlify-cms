@@ -5,7 +5,7 @@ currikiStats heading: Interactive Video Tournament
 currikiStats descrip: Strut your stuff. Compete to win great merch! Details coming soon..
 communitys:
   community:
-    - community navbars: ok
+    - community navbars: ""
 currikiStats btn:
   crruikiBtn url: https://www.curriki.org/showcase/
   crruikiBtn text: Cool Stuff Created with OpenLearnX
