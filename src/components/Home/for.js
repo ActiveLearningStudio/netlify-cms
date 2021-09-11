@@ -11,8 +11,8 @@ const For = ({data}) => {
                 <div
         style={{
           backgroundImage: `url(${card.card_logo})`,
-          backgroundPosition: "left",
-          backgroundSize: "contain",
+          backgroundPosition: "45px center",
+          backgroundSize: "175px",
           backgroundRepeat: "no-repeat",
         }}
         className="block"
