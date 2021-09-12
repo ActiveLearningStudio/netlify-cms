@@ -40,4 +40,8 @@ social media Icon:
   icons:
     - SMIcon: /img/education-publishing.svg
       icon url: extra
+add links:
+  links:
+    - link name: extra
+      url: extra
 ---
