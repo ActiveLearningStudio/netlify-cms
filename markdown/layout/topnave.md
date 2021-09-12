@@ -1,7 +1,7 @@
 ---
 templateKey: top-navbar
 title: Top navigation
-top logo: /img/image_2021_08_04t17_46_08_342z.png
+top logo: /img/openlearnx-logo.png
 add links:
   links:
     - link name: The Xchange
